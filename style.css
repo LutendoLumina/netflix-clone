@@ -2,15 +2,10 @@
 
 * {
     box-sizing: border-box;
-    margin: 0px;
-    font-size: 16px;
-    text-decoration: none;
-}
-
-html, body {
-    height: 100%;
     margin: 0;
     padding: 0;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 body {
@@ -35,6 +30,13 @@ body {
     padding-bottom: 20px;
 }
 
+.trending-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
 /* HERO SECTION*/
 .hero-section {
     background-image: linear-gradient(
@@ -45,7 +47,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    min-height: 100vh;
+    height: 100vh;
 }
 
 /* hero nav */
@@ -65,11 +67,12 @@ nav a {
     padding: 7px 17px;
     color: white;
     background-color: rgb(226, 2, 2);
-    border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 5px;
 }
 
+/* hero-banner container section */
 .banner-container {
     color: white;
     display: flex;
@@ -77,7 +80,6 @@ nav a {
     align-items: center;
     justify-content: center;
     padding: 150px 45px 200px;
-    border-bottom: 10px solid #222222;
     text-align: center;
 }
 
@@ -88,39 +90,129 @@ nav a {
 .get-started-form {
     height: 60px;
     display: flex;
+    gap: 8px;
 }
 
 .get-started-form input {
-    height: 100%;
     width: 450px;
     background-color: transparent;
-    padding-left: 10px;
-    color: white;
     border: 1px solid rgba(255,255,255,0.4);
+    border-radius: 5px;
+
 }
 
-.get-started-form button {
+::placeholder {
+    color: rgb(233, 233, 233);
+    padding-left: 10px;
+}
+
+.get-started-btn {
     background-color: rgb(226, 2, 2);
     color: white;
     font-weight: bold;
     height: 100%;
-    font-size: 1.625rem;
+    font-size: 1.2rem;
     border: none;
     min-height: 60px;
     padding: 0 26px;
-    border-left: 1px solid #333;
     cursor: pointer;
     display: flex;
     align-items: center;
     gap: 10px;
+    border-radius: 5px;
 }
 
+.get-started-btn:hover {
+    background-color: rgb(200, 0, 0);
+}
+
+/* hero curve border */
+.curve-separator {
+    display: block;
+    width: 100%;
+    height: 80px;
+    background: transparent;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    z-index: 1;
+}
+
+.curve-separator::before {
+    display: none;
+}
+
+.curve-separator::after {
+    display: none;
+}
+
+
+/* TRENDING NOW SECTION */
+.trending-section {
+    background-color: black;
+    padding: 50px 45px 80px;
+    position: relative;
+
+}
+
+.shows-carousel {
+    display: flex;
+    gap: 8px;
+    position: relative;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 20px;
+    scrollbar-width: none;
+}
+
+.shows-carousel::-webkit-scrollbar {
+    display: none;
+}
+
+.show-card {
+    position: relative;
+    min-width: 180px;
+    height: 250px;
+    border-radius: 5px;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 20px;
+}
+
+.show-card:hover {
+    transform: scale(1.05);
+    z-index: 10;
+}
+
+.show-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.show-number {
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    font-size: 85px;
+    font-weight: 900;
+    color: black;
+    line-height: 1;
+    -webkit-text-stroke: 3px white;
+    text-shadow: 4px 4px 0px rgba(0,0,0,0.3);
+    z-index: 2;
+    font-family: 'Arial Black', sans-serif;
+}
+
+
+
+/* VIDEO ELEMENT SECTION */
 .info-container {
     background: black;
     color: white;
     display: flex;
-    padding: 70px 45px;
-    border-bottom: 10px solid #222222;
+    padding: 10px 45px;
     justify-content: space-between;
     align-items: center;
 }
@@ -155,33 +247,172 @@ nav a {
     padding-bottom: 30px;
 }
 
+
+/* MORE REASONS TO JOIN SECTION */
+.reasons-section {
+    background-color: black;
+    padding: 10px 35px;
+}
+
+.reasons-title {
+    color: white;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.reasons-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+}
+
+.reason-card {
+    background: linear-gradient(149deg, #192247 0%, #210e17 99%);
+    border-radius: 16px;
+    padding: 24px;
+    position: relative;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+}
+
+.reason-card h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 12px;
+    line-height: 1.2;
+}
+
+.reason-card p {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.reason-icon {
+    width: 72px;
+    height: 72px;
+    margin-top: auto;
+    align-self: flex-end;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+/* FAQ SECTION */
+.faq {
+    background-color: black;
+    color: white;
+    padding: 70px 50px 30px;
+}
+
+.faq h2 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+details {
+    width: 100%;
+    max-width: 1500px;
+    margin: 0 auto 8px;
+    list-style: none;
+}
+
+details summary {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 24px;
+    font-size: 18px;
+    font-weight: 500;
+    background: #2d2d2d;
+    cursor: pointer;
+    position: relative;
+
+}
+
+details summary:hover {
+    background: #404040;
+}
+
+summary::after {
+    content: '+';
+    font-size: 3rem;
+    font-weight: 200;
+    line-height: 1;
+    right: 20px;
+    transition: transform 0.3s;
+    flex-shrink: 0;
+}
+
+details[open] summary::after {
+    content: '×';
+    transform: rotate(0deg);
+}
+
+details p {
+    background: #2d2d2d;
+    text-align: left;
+    padding: 24px;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    border-top: 1px solid black;
+}
+
+.email-signup {
+    background: black;
+    max-width: 600px;
+    margin: 20px auto 60px;
+}
+
+main form {
+    background-color: black;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
 /* FOOTER STYLES */
 footer {
     background-color: black;
     padding: 70px 50px 30px;
+
 }
 
 .footer-top {
     margin-bottom: 30px;
 }
 
-footer ul li, .questions-title {
-    color: #757575;
+.questions-title {
+    text-decoration: none;
+    color: #cecccc;
+    padding-top: 25px;
 }
 
-footer ul li:hover {
+footer ul a {
+    color: #cecccc;
     text-decoration: underline;
     cursor: pointer;
+    font-size: 13px;
 }
 
-.questions-title:hover {
+.questions-title a {
+    color: #cecccc;
     text-decoration: underline;
     cursor: pointer;
 }
 
 .footer-links {
     list-style-type: none;
-    columns: 2;
+    columns: 4;
     padding: 0;
 }
 

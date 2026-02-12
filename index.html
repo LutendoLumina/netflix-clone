@@ -6,10 +6,12 @@
     <link rel="icon" href="assets/favicon.ico">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
     <title>Netflix</title>
 </head>
 <body>
 
+    <!-- hero-section -->
     <div class="hero-section">
 
         <nav>
@@ -27,58 +29,239 @@
                 <h3 class="email-form-title">Ready to watch? Enter your email to create or restart your membership.</h3>
                 <div class="get-started-form">
                     <input type="email" name="email" placeholder="Email address" required>
-                    <button type="button">Get Started <span class="material-icons">arrow_forward_ios</span></button>
+                    <a href="https://www.netflix.com/signup" target="_blank" class="get-started-btn">Get Started <span class="material-icons">arrow_forward_ios</span></a>
                 </div>
             </form>
+
         </div>
 
-        <main>
-
-            <div class="info-container">
-
-                <div class="info">
-                    <h1 class="card-title">Enjoy on your TV</h1>
-                    <p class="card-subtitle">Watch on Smart TVs, Playstation, Xbox,<br> Chromecast, Apple TV, Blu-ray players, and more.</p>
-                </div>
-
-                <div class="tv-container">
-                    <img src="assets/tv-image.png">
-                    <!-- Inline video -->
-                    <video autoplay playsinline muted loop>
-                        <source src="assets/netflix-video.m4v" type="video/x-m4v">
-                    </video>
-                </div>
-            
-            </div>
-
-        </main>
+        <svg class="curve-separator" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <defs>
+                <linearGradient id="curveGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                    <stop offset="0%" style="stop-color:#192247;stop-opacity:1" />
+                    <stop offset="25%" style="stop-color:#5b21b6;stop-opacity:1" />
+                    <stop offset="50%" style="stop-color:#ec4899;stop-opacity:1" />
+                    <stop offset="75%" style="stop-color:#fb7185;stop-opacity:1" />
+                    <stop offset="100%" style="stop-color:#192247;stop-opacity:1" />
+                </linearGradient>
+            </defs>
+            <path d="M0,60 Q600,0 1200,60 L1200,120 L0,120 Z" fill="black"/>
+            <path d="M0,60 Q600,0 1200,60" fill="none" stroke="url(#curveGradient)" stroke-width="3"/>
+        </svg>
 
     </div>
+
+    <main>
+
+        <!-- Trending Now Section -->
+        <div class="trending-section">
+
+            <h2 class="trending-title">Trending Now</h2>
+
+            <div class="shows-carousel">
+
+                <div class="show-card">
+                    <img src="assets/trending_shows/bridgerton.webp" alt="Bridgerton">
+                    <div class="show-number">1</div>
+                </div>
+
+                <div class="show-card">
+                    <img src="assets/trending_shows/yoh-bestie.webp" alt="Bridgerton">
+                    <div class="show-number">2</div>
+                </div>
+
+                <div class="show-card">
+                    <img src="assets/trending_shows/the-rip-3.webp" alt="Bridgerton">
+                    <div class="show-number">3</div>
+                </div>
+
+                <div class="show-card">
+                    <img src="assets/trending_shows/his-hers-4.webp" alt="Bridgerton">
+                    <div class="show-number">4</div>
+                </div>
+
+                <div class="show-card">
+                    <img src="assets/trending_shows/strangerthings5.webp" alt="Bridgerton">
+                    <div class="show-number">5</div>
+                </div>
+
+                <div class="show-card">
+                    <img src="assets/trending_shows/lincon-lawyer-6.webp" alt="Bridgerton">
+                    <div class="show-number">6</div>
+                </div>
+
+                <div class="show-card">
+                    <img src="assets/trending_shows/htrl-7.webp" alt="Bridgerton">
+                    <div class="show-number">7</div>
+                </div>
+
+                <div class="show-card">
+                    <img src="assets/trending_shows/koj-8.webp" alt="Bridgerton">
+                    <div class="show-number">8</div>
+                </div>
+
+                <div class="show-card">
+                    <img src="assets/trending_shows/fs-9.webp" alt="Bridgerton">
+                    <div class="show-number">9</div>
+                </div>
+
+                <div class="show-card">
+                    <img src="assets/trending_shows/love-wine-10.webp" alt="Bridgerton">
+                    <div class="show-number">10</div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- video element section -->
+        <div class="info-container">
+
+            <div class="info">
+                <h1 class="card-title">Enjoy on your TV</h1>
+                <p class="card-subtitle">Watch on Smart TVs, Playstation, Xbox,<br> Chromecast, Apple TV, Blu-ray players, and more.</p>
+            </div>
+
+            <div class="tv-container">
+                <img src="assets/tv-image.png">
+                <video autoplay playsinline muted loop>
+                    <source src="assets/netflix-video.m4v" type="video/x-m4v">
+                </video>
+            </div>
+        
+        </div>
+
+        <!-- More Reasons to join section -->
+        <div class="reasons-section">
+            <h2 class="reasons-title">More Reasons to Join</h2>
+
+            <div class="reasons-grid">
+
+                <div class="reason-card">
+                    <h3>Enjoy on your TV</h3>
+                    <p>Watch on Smart TVs, Playstation, Xbox, Chromecast, Apple TV, Blu-ray players, and more.</p>
+                    <div class="reason-icon tv-icon">
+                        <img src="assets/svg/tv-icon.svg" alt="tv-icon"/>
+                    </div>
+                </div>
+
+                <div class="reason-card">
+                    <h3>Download your shows to watch offline</h3>
+                    <p>Save your favorites easily and always have something to watch.</p>
+                    <div class="reason-icon download-icon">
+                        <img src="assets/svg/download-icon.svg" alt="download-icon"/>
+                    </div>
+                </div>
+
+                <div class="reason-card">
+                    <h3>Watch everywhere</h3>
+                    <p>Stream unlimited movies and TV shows on your phone, tablet, laptop, and TV.</p>
+                    <div class="reason-icon watch-icon">
+                        <img src="assets/svg/torch-icon.svg" alt="torch-icon"/>
+                    </div>
+                </div>
+
+                <div class="reason-card">
+                    <h3>Create profiles for kids</h3>
+                    <p>Send kids on adventures with their favorite characters in a space made just for them — free with your membership.</p>
+                    <div class="reason-icon kids-icon">
+                        <img src="assets/svg/profile-icon.svg" alt="profile-icon"/>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- FAQ section -->
+        <section class="faq">
+            <h2>Frequently Asked Questions</h2>
+
+            <details>
+                <summary>What is Netflix?</summary>
+                <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows,
+                movies, anime, documentaries, and more on thousands of internet-connected devices.<br><br>
+
+                You can watch as much as you want, whenever you want without a single commercial – all
+                for one low monthly price. There's always something new to discover and new TV shows and
+                movies are added every week!
+                </p>
+            </details>
+
+            <details>
+                <summary>How much does Netflix cost?</summary>
+                <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device,
+                all for one fixed monthly fee. Plans range from R 59 to R 229/month.</p>
+            </details>
+
+            <details>
+                <summary>Where can I watch?</summary>
+                <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web
+                at netflix.com from your personal computer or on any internet-connected device that offers
+                the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.<br><br>
+
+                You can also download your favorite shows with the iOS or Android app.
+                Use downloads to watch while you're on the go and without an internet connection.
+                Take Netflix with you anywhere.
+                </p>
+            </details>
+
+            <details>
+                <summary>How do I cancel?</summary>
+                <p>Netflix is flexible. You can easily cancel your account online in two clicks.
+                There are no cancellation fees – start or stop your account anytime.</p>
+            </details>
+
+            <details>
+                <summary>What can I watch on Netflix?</summary>
+                <p>Netflix has an extensive library of feature films, documentaries, TV shows,
+                anime, award-winning Netflix originals, and more. Watch as much as you want, anytime you want.</p>
+            </details>
+
+            <details>
+                <summary>How much does Netflix cost?</summary>
+                <p>The Netflix Kids experience is included in your membership to give parents control
+                while kids enjoy family-friendly TV shows and movies in their own space.<br><br>
+                Kids profiles come with PIN-protected parental controls that let you restrict the maturity rating
+                of content kids can watch and block specific titles you don’t want kids to see.</p>
+            </details>
+        </section>
+
+        <form>
+            <h3 class="email-form-title">Ready to watch? Enter your email to create or restart your membership.</h3>
+            <div class="get-started-form">
+                <input type="email" name="email" placeholder="Email address" required>
+                <a href="https://www.netflix.com/signup" target="_blank" class="get-started-btn">Get Started <span class="material-icons">arrow_forward_ios</span></a>
+            </div>
+        </form> 
+
+    </main>
 
     <footer>
 
         <div class="footer-top">
-            <a class="questions-title" href="https://www.netflix.com/za/" target="_blank">Questions? Call 0800 100 046</a>
+           <p class="questions-title">Questions? Call <a href="https://www.netflix.com/za/" target="_blank">0800 100 046</a></p>
         </div>
 
             <ul class="footer-links">
-                <li>FAQ</li>
-                <li>Account</li>
-                <li>Investor Relations</li>
-                <li>Redeem Gift Cards</li>
-                <li>Ways to Watch</li>
-                <li>Privacy</li>
-                <li>Corporate Information</li>
-                <li>Speed Test</li>
-                <li>Only on Netflix</li>
-                <li>Help Center</li>
-                <li>Media Center</li>
-                <li>Jobs</li>
-                <li>Buy Gift Cards</li>
-                <li>Terms of Use</li>
-                <li>Cookie Preferences</li>
-                <li>Contact Us</li>
-                <li>Legal Notices</li>
+                <li><a href="https://help.netflix.com/en/node/412" target="_blank">FAQ</a></li>
+                <li><a href="https://www.netflix.com/za/login" target="_blank">Account</a></li>
+                <li><a href="https://ir.netflix.net/ir-overview/profile/default.aspx" target="_blank">Investor Relations</a></li>
+                <li><a href="https://www.netflix.com/za/redeem" target="_blank">Redeem Gift Cards</a></li>
+                <li><a href="https://help.netflix.com/en/node/14361" target="_blank">Ways to Watch</a></li>
+                <li><a href="https://help.netflix.com/legal/privacy" target="_blank">Privacy</a></li>
+                <li><a href="https://help.netflix.com/en/node/134094" target="_blank">Corporate Information</a></li>
+                <li><a href="https://fast.com/" target="_blank">Speed Test</a></li>
+                <li><a href="https://www.netflix.com/za/browse/genre/839338" target="_blank">Only on Netflix</a></li>
+                <li><a href="https://help.netflix.com/en" target="_blank">Help Center</a></li>
+                <li><a href="https://media.netflix.com/en/" target="_blank">Media Center</a></li>
+                <li><a href="https://jobs.netflix.com/" target="_blank">Jobs</a></li>
+                <li><a href="https://www.netflix.com/gift-cards" target="_blank">Buy Gift Cards</a></li>
+                <li><a href="https://help.netflix.com/legal/termsofuse" target="_blank">Terms of Use</a></li>
+                <li><a href="https://www.netflix.com/za/" target="_blank">Cookie Preferences</a></li>
+                <li><a href="https://help.netflix.com/en/contactus" target="_blank">Contact Us</a></li>
+                <li><a href="https://help.netflix.com/legal/notices" target="_blank">Legal Notices</a></li>
             </ul>
 
         <div class="language">
@@ -88,9 +271,10 @@
                 <option value="Zulu">Zulu</option>
             </select>
         </div>
+
+        <p class="questions-title">Netflix South Africa</p>
         
     </footer>
-
     
 </body>
 </html>

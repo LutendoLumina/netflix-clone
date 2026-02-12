@@ -1,0 +1,425 @@
+/* Tablet and smaller screens */
+@media screen and (max-width: 1024px) {
+    
+    .card-title {
+        font-size: 2.5rem;
+    }
+    
+    .card-subtitle {
+        font-size: 1.375rem;
+    }
+    
+    .reasons-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+    
+    .tv-container img {
+        width: 450px;
+        height: 280px;
+    }
+    
+    .tv-container video {
+        width: 400px;
+    }
+    
+    .footer-links {
+        columns: 3;
+    }
+}
+
+/* Mobile landscape and smaller tablets */
+@media screen and (max-width: 768px) {
+    
+    /* Navigation */
+    nav {
+        margin: 0 20px;
+        padding-top: 15px;
+        height: 70px;
+    }
+    
+    /* Curve separator adjustments */
+    .curve-separator {
+        height: 60px;
+        bottom: 0;
+    }
+    
+    nav img {
+        height: 28px;
+    }
+    
+    nav a {
+        padding: 5px 12px;
+        font-size: 14px;
+    }
+    
+    /* Hero section */
+    .hero-section {
+        height: auto;
+        min-height: 600px;
+        position: relative;
+        padding-bottom: 60px;
+    }
+    
+    .banner-container {
+        padding: 80px 20px 80px;
+    }
+    
+    .banner-container h1 {
+        font-size: 2rem;
+    }
+    
+    .card-title {
+        font-size: 2rem;
+    }
+    
+    .card-subtitle {
+        font-size: 1.125rem;
+        margin: 0.75rem 0;
+    }
+    
+    .email-form-title {
+        font-size: 1rem;
+        padding-bottom: 15px;
+    }
+    
+    /* Get Started Form */
+    .get-started-form {
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        gap: 12px;
+    }
+    
+    .get-started-form input {
+        width: 100%;
+        height: 48px;
+        padding: 0 10px;
+    }
+    
+    .get-started-btn {
+        width: 100%;
+        justify-content: center;
+        font-size: 1rem;
+        min-height: 48px;
+    }
+    
+    /* Trending section */
+    .trending-section {
+        padding: 40px 20px 60px;
+        margin-top: -2px;
+    }
+    
+    .trending-title {
+        font-size: 1.5rem;
+        margin-bottom: 20px;
+    }
+    
+    .show-card {
+        min-width: 140px;
+        height: 200px;
+        padding-left: 15px;
+    }
+    
+    .show-number {
+        font-size: 65px;
+        -webkit-text-stroke: 2px white;
+    }
+    
+    /* Info container */
+    .info-container {
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+    }
+    
+    .info {
+        max-width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+    
+    .tv-container {
+        padding-right: 0;
+        width: 100%;
+    }
+    
+    .tv-container img {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+    }
+    
+    .tv-container video {
+        width: 90%;
+        max-width: 350px;
+    }
+    
+    /* Reasons section */
+    .reasons-section {
+        padding: 40px 20px;
+    }
+    
+    .reasons-title {
+        font-size: 1.5rem;
+        margin-bottom: 25px;
+    }
+    
+    .reasons-grid {
+        grid-template-columns: 1fr;
+        gap: 12px;
+    }
+    
+    .reason-card {
+        min-height: 200px;
+        padding: 20px;
+    }
+    
+    .reason-card h3 {
+        font-size: 1.25rem;
+    }
+    
+    .reason-card p {
+        font-size: 0.9rem;
+    }
+    
+    .reason-icon {
+        width: 56px;
+        height: 56px;
+    }
+    
+    /* FAQ section */
+    .faq {
+        padding: 50px 20px 30px;
+    }
+    
+    .faq h2 {
+        font-size: 1.25rem;
+        margin-bottom: 20px;
+    }
+    
+    details summary {
+        padding: 16px;
+        font-size: 16px;
+    }
+    
+    summary::after {
+        font-size: 2rem;
+        right: 10px;
+    }
+    
+    details p {
+        padding: 16px;
+        font-size: 16px;
+    }
+    
+    /* Footer */
+    footer {
+        padding: 50px 20px 30px;
+    }
+    
+    .footer-links {
+        columns: 2;
+    }
+    
+    .footer-links li {
+        font-size: 12px;
+    }
+    
+    footer ul a {
+        font-size: 12px;
+    }
+}
+
+/* Small mobile devices */
+@media screen and (max-width: 480px) {
+    
+    /* Curve separator */
+    .curve-separator {
+        height: 50px;
+        bottom: 0;
+    }
+    
+    /* Hero section */
+    .hero-section {
+        min-height: 550px;
+        padding-bottom: 50px;
+    }
+    
+    nav img {
+        height: 24px;
+    }
+    
+    nav a {
+        padding: 4px 10px;
+        font-size: 13px;
+    }
+    
+    .banner-container {
+        padding: 60px 15px 60px;
+    }
+    
+    .banner-container h1 {
+        font-size: 1.75rem;
+    }
+    
+    .card-title {
+        font-size: 1.75rem;
+    }
+    
+    .card-subtitle {
+        font-size: 1rem;
+    }
+    
+    .email-form-title {
+        font-size: 0.9rem;
+    }
+    
+    .get-started-form input {
+        height: 44px;
+    }
+    
+    .get-started-btn {
+        min-height: 44px;
+        font-size: 0.95rem;
+        padding: 0 20px;
+    }
+    
+    .trending-section {
+        padding: 30px 15px 50px;
+        margin-top: -2px;
+    }
+    
+    .trending-title {
+        font-size: 1.25rem;
+    }
+    
+    .show-card {
+        min-width: 120px;
+        height: 170px;
+        padding-left: 12px;
+    }
+    
+    .show-number {
+        font-size: 55px;
+        -webkit-text-stroke: 2px white;
+        left: -8px;
+    }
+    
+    .tv-container img {
+        max-width: 320px;
+    }
+    
+    .tv-container video {
+        max-width: 280px;
+    }
+    
+    .reasons-title {
+        font-size: 1.25rem;
+    }
+    
+    .reason-card h3 {
+        font-size: 1.125rem;
+    }
+    
+    .reason-card p {
+        font-size: 0.875rem;
+    }
+    
+    .reason-icon {
+        width: 48px;
+        height: 48px;
+    }
+    
+    .faq h2 {
+        font-size: 1.125rem;
+    }
+    
+    details summary {
+        padding: 14px;
+        font-size: 15px;
+    }
+    
+    summary::after {
+        font-size: 1.75rem;
+    }
+    
+    details p {
+        padding: 14px;
+        font-size: 15px;
+    }
+    
+    .footer-links {
+        columns: 1;
+    }
+    
+    .language {
+        width: 130px;
+        height: 48px;
+    }
+}
+
+/* Large desktop screens */
+@media screen and (min-width: 1440px) {
+    
+    nav {
+        margin: 0 80px;
+    }
+    
+    .banner-container {
+        padding: 180px 80px 220px;
+    }
+    
+    .trending-section {
+        padding: 60px 80px 100px;
+    }
+    
+    .show-card {
+        min-width: 200px;
+        height: 280px;
+    }
+    
+    .show-number {
+        font-size: 95px;
+    }
+    
+    .info-container {
+        padding: 40px 80px;
+    }
+    
+    .tv-container img {
+        width: 650px;
+        height: 420px;
+    }
+    
+    .tv-container video {
+        width: 590px;
+    }
+    
+    .reasons-section {
+        padding: 40px 80px;
+    }
+    
+    .faq {
+        padding: 80px 80px 40px;
+    }
+    
+    footer {
+        padding: 80px 80px 40px;
+    }
+}
+
+/* Hover effects - disable on touch devices */
+@media (hover: none) {
+    .show-card:hover {
+        transform: none;
+    }
+    
+    .get-started-btn:hover {
+        background-color: rgb(226, 2, 2);
+    }
+    
+    details summary:hover {
+        background: #2d2d2d;
+    }
+}
