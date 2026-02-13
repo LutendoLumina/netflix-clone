@@ -1,78 +1,23 @@
 /* TABLETS (max-width: 1024px) */
 @media (max-width: 1024px) {
 
-    /* Navigation */
-    nav {
-        margin: 0 20px;
-        padding-top: 15px;
-        height: 70px;
-    }
-    
-    /* Curve separator adjustments */
-    .curve-separator {
-        height: 60px;
-        bottom: 0;
-    }
-    
-    nav img {
-        height: 28px;
-    }
-    
-    nav a {
-        padding: 5px 12px;
-        font-size: 14px;
-    }
-    
-    /* Hero section */
-    .hero-section {
-        height: auto;
-        min-height: 600px;
-        position: relative;
-        padding-bottom: 60px;
-    }
-    
-    .banner-container {
-        padding: 80px 20px 80px;
-    }
-    
-    .banner-container h1 {
-        font-size: 2rem;
-    }
-    
+    /* HERO TEXT */
     .card-title {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
-    
+
     .card-subtitle {
-        font-size: 1.125rem;
-        margin: 0.75rem 0;
+        font-size: 1.3rem;
     }
-    
-    .email-form-title {
-        font-size: 1rem;
-        padding-bottom: 15px;
+
+    .banner-container {
+        padding: 120px 30px 160px;
     }
-    
-    /* Get Started Form */
-    .get-started-form {
-        flex-direction: column;
-        height: auto;
-        width: 100%;
-        gap: 12px;
-    }
-    
+
     .get-started-form input {
-        width: 100%;
-        height: 48px;
-        padding: 0 10px;
+        width: 320px;
     }
-    
-    .get-started-btn {
-        width: 100%;
-        justify-content: center;
-        font-size: 1rem;
-        min-height: 48px;
-    }
+
     /* TRENDING */
     .trending-section {
         padding: 50px 30px 80px;
@@ -127,49 +72,55 @@
         height: 30px;
     }
 
-    /* HERO */
+    /* Hero section */
     .hero-section {
         height: auto;
+        min-height: 600px;
+        position: relative;
         padding-bottom: 60px;
     }
 
     .banner-container {
-        padding: 100px 20px 120px;
+        padding: 80px 20px 80px;
     }
 
-    .curve-separator {
-        height: 60px;
-        bottom: 0;
+    .banner-container h1 {
+        font-size: 2rem;
     }
 
     .card-title {
         font-size: 2rem;
-        line-height: 1.2;
     }
 
     .card-subtitle {
-        font-size: 1.1rem;
+        font-size: 1.125rem;
+        margin: 0.75rem 0;
     }
 
     .email-form-title {
         font-size: 1rem;
+        padding-bottom: 15px;
     }
 
+    /* Get Started Form */
     .get-started-form {
         flex-direction: column;
         height: auto;
         width: 100%;
+        gap: 12px;
     }
 
     .get-started-form input {
         width: 100%;
-        height: 50px;
+        height: 48px;
+        padding: 0 10px;
     }
 
     .get-started-btn {
         width: 100%;
         justify-content: center;
-        height: 50px;
+        font-size: 1rem;
+        min-height: 48px;
     }
 
     /* Trending section */
@@ -177,18 +128,18 @@
         padding: 40px 20px 60px;
         margin-top: -2px;
     }
-    
+
     .trending-title {
         font-size: 1.5rem;
         margin-bottom: 20px;
     }
-    
+
     .show-card {
         min-width: 140px;
         height: 200px;
         padding-left: 15px;
     }
-    
+
     .show-number {
         font-size: 65px;
         -webkit-text-stroke: 2px white;
